@@ -1,0 +1,17 @@
+﻿@model Bombillo.Data.Dto.UserDto.UserLoginDto
+
+<form asp-action="Login" method="post">
+    <div>
+        <label asp-for="Usuario"></label>
+        <input asp-for="Usuario" />
+    </div>
+    <div>
+        <label asp-for="Contrasena"></label>
+        <input asp-for="Contrasena" type="password" />
+    </div>
+    <button type="submit">Login</button>
+</form>
+
+<p>
+    ¿No tienes una cuenta? <a asp-controller="Login" asp-action="Register">Registrarse</a>
+</p>

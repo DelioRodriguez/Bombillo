@@ -1,0 +1,40 @@
+﻿@model Bombillo.Data.Dto.UserDto.UserRegisterDTO
+
+<form asp-action="Register" method="post">
+    <div>
+        <label asp-for="Usuario"></label>
+        <input asp-for="Usuario" />
+        <span asp-validation-for="Usuario" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Contrasena"></label>
+        <input asp-for="Contrasena" type="password" />
+        <span asp-validation-for="Contrasena" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Direccion"></label>
+        <input asp-for="Direccion" />
+        <span asp-validation-for="Direccion" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Cedula"></label>
+        <input asp-for="Cedula" />
+        <span asp-validation-for="Cedula" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Phone"></label>
+        <input asp-for="Phone" />
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>
+    <button type="submit">Register</button>
+</form>
